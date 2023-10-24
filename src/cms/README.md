@@ -2,6 +2,17 @@
 
 Strapi comes with a full featured [Command Line Interface](https://docs.strapi.io/dev-docs/cli) (CLI) which lets you scaffold and manage your project in seconds.
 
+
+### `cs`
+Export strapi config [Learn more](https://github.com/boazpoolman/strapi-plugin-config-sync)
+```
+yarn cs export
+```
+Import strapi config
+```
+yarn cs import
+```
+
 ### `develop`
 
 Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-develop)
