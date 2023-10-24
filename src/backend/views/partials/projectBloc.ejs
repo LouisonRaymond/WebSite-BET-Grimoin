@@ -12,7 +12,7 @@
       >
         <h4 class="mb-3"><%= project.title %></h4>
         <%- md(project.shortDescription) %>
-        <a class="fw-medium" href="<%= `/projet/${locale}/${project.id}-${project.title}` %>"
+        <a class="fw-medium" href="<%= `/${locale}/projet/${project.id}-${project.title}` %>"
           >Voir plus<i class="fa fa-arrow-right ms-2"></i
         ></a>
       </div>

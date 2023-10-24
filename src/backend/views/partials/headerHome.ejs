@@ -34,7 +34,7 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav">
-              <a href="index.html" class="nav-item nav-link active">Accueil</a>
+              <a href="/<%- model.locale %>" class="nav-item nav-link active">Accueil</a>
               <div class="nav-item dropdown">
                 <a
                   href="#"
@@ -55,13 +55,13 @@
                 >Nos expertises</a
               >
 
-              <a href="contact.html" class="nav-item nav-link">Contact</a>
+              <a href="/<%- model.locale %>/contact" class="nav-item nav-link">Contact</a>
             </div>
           </div>
           <% if (model.locale === 'en') { %>
             <div class="language-switcher py-2 px-4 ms-3 ms-auto py-0">
               <span class="language-en active">EN</span>
-              <a href="/"><span class="language-fr">FR</span></a>
+              <a href="/fr"><span class="language-fr">FR</span></a>
             </div>
             <% } else { %>
               <div class="language-switcher py-2 px-4 ms-3 ms-auto py-0">
@@ -120,7 +120,7 @@
                   /></h7>
                 </div>
                 <div class="footer">
-                    <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                    <a href="/<%- model.locale %>/contact" class="btn btn-primary">Contact Us</a>
                   </div>
               </form>
             </div>

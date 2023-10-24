@@ -33,7 +33,7 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav">
-              <a href="/" class="nav-item nav-link active">Accueil</a>
+              <a href="/<%- model.locale %>" class="nav-item nav-link active">Accueil</a>
               <div class="nav-item dropdown">
                 <a
                   href="#"
@@ -55,11 +55,11 @@
                   >Nos expertises</a
                 >
               </div>
-              <a href="contact.html" class="nav-item nav-link">Contact</a>
+              <a href="/<%- model.locale %>/contact" class="nav-item nav-link">Contact</a>
             </div>
             <div class="language-switcher py-2 px-4 ms-3 ms-auto py-0">
               <span class="language-fr active">FR</span
-              ><a href="EN-A3-gendarmerie.html"><span class="language-en">EN</span></a>
+              ><a href="/en"><span class="language-en">EN</span></a>
             </div>
           </div>
         </nav>

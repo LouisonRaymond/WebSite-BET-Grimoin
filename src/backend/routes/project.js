@@ -1,12 +1,11 @@
 const express = require('express');
 const { getProject } = require('../services/projectService');
-const router = express.Router();
+const router = express.Router({mergeParams: true});
 
 /* GET home page. */
-router.get('/:lang?/:id-:title', async function (req, res, next) {
-  console.log('lang=' + req.params.lang);
+router.get('/:id-:title', async function (req, res, next) {
   console.log('id=' + req.params.id);
-  const locale = req.params.lang || 'fr';
+  const locale = req.lang;
   const projectId = req.params.id;
   const project = await getProject(projectId, locale);
 

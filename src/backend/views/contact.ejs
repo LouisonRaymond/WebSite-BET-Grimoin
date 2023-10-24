@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <%- include('partials/head', { model: { locale: model.locale, title: 'BET GRIMOIN - Contact' } }) %>
+  <%- include('partials/header', { model: { locale: model.locale } }) %>
+  <div>
+    <div>
+      <body>
+        <!-- Hero Start-->
+        <section id="fh5co-features">
+          <img
+            src="/img/banner contact good.png"
+            style="width: 100%; margin-top: -13px"
+          />
+          <!-- Hero End-->
+          <br /><br />
+          <div>
+            <h1 class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+              Contactez-nous
+            </h1>
+            <div>
+              <hr class="red_ligne" size="4px" />
+            </div>
+          </div>
+          <!-- Form Start-->
+          <div class="container">
+            <div class="contact-page">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-12">
+                    <div class="inner-content">
+                      <div class="row">
+                        <div class="col-lg-6">
+                          <div id="map">
+                            <iframe
+                              src="https://maps.google.com/maps?q=BET+JM+GRIMOIN+SAS=UTF8&iwloc=&output=embed"
+                              width="100%"
+                              height="650px"
+                              frameborder="0"
+                              style="border: 0"
+                              allowfullscreen
+                            ></iframe>
+                          </div>
+                        </div>
+                        <div class="col-lg-6 align-self-center">
+                          <form id="contact" action="/<%- model.locale %>/contact" method="post">
+                            <div class="row">
+                              <div class="col-lg-12">
+                                <fieldset>
+                                  <a>Nom</a>
+                                  <input
+                                    type="text"
+                                    name="lastname"
+                                    id="lastname"
+                                    class="form-control"
+                                    placeholder=""
+                                    autocomplete="on"
+                                    required
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-lg-12">
+                                <fieldset>
+                                  <a>Prénom</a>
+                                  <input
+                                  type="text"
+                                  name="firstname"
+                                  id="firstname"
+                                  class="form-control"
+                                  placeholder=""
+                                  autocomplete="on"
+                                  required
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-lg-12">
+                                <fieldset>
+                                  <a>Email</a>
+                                  <input
+                                    type="email"
+                                    name="email"
+                                    id="email"
+                                    class="form-control"
+                                    placeholder=""
+                                    required
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-lg-12">
+                                <fieldset>
+                                  <a>Nom de votre entreprise</a>
+                                  <input
+                                    type="text"
+                                    name="company"
+                                    id="company"
+                                    class="form-control"
+                                    placeholder=""
+                                    required
+                                  />
+                                </fieldset>
+                              </div>
+                              <div class="col-lg-12">
+                                <fieldset>
+                                  <a>Message</a>
+                                  <textarea
+                                    name="message"
+                                    type="text"
+                                    class="form-control"
+                                    id="message"
+                                    placeholder=""
+                                    required
+                                  ></textarea>
+                                </fieldset>
+                              </div>
+                              <div class="col-lg-12">
+                                <fieldset>
+                                  <button
+                                    type="submit"
+                                    id="form-submit"
+                                    style="width: 100%"
+                                    class="main-button"
+                                  >
+                                    Envoyer
+                                  </button>
+                                </fieldset>
+                              </div>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Form End-->
+            <%- include('partials/footer', { model: { locale: model.locale } }) %>
+        </section>
+      </body>
+    </div>
+  </div>
+</html>

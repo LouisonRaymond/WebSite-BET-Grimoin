@@ -22,9 +22,14 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
-app.use('/', indexRouter);
-app.use('/projet', projectRouter);
-app.use('/contact', contactRouter);
+app.param('lang', function (req, res, next, lang) {
+  req.lang = lang || 'fr';
+  next();
+})
+
+app.use('/:lang?/', indexRouter);
+app.use('/:lang/projet', projectRouter);
+app.use('/:lang/contact', contactRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
