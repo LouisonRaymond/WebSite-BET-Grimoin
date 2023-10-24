@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
   <%- include('partials/head', { model: { locale: model.locale, title: 'BET GRIMOIN - Accueil' } }) %>
-  <%- include('partials/headerHome', { model: { locale: model.locale } }) %>
+  <%- include('partials/header-home', { model: { locale: model.locale } }) %>
   <body>
     <br /><br />
     <!-- Map Start -->
@@ -65,7 +65,7 @@
         </div>
         <div class="row g-4">
           <% model.projects.forEach(function(project, index){ %>
-            <%- include('partials/projectBloc', {locale: model.locale, project, delay: model.delays[index]}); %>
+            <%- include('partials/project-bloc', {locale: model.locale, project, delay: model.delays[index]}); %>
           <% }); %>
         </div>
       </div>
@@ -73,7 +73,7 @@
     <div style="text-align: center">
       <a
         class="fw-medium ms-2"
-        href="domainePublique.html"
+        href="/<%- model.locale %>/domaine-publique"
         style="font-size: 20px; color: #b7143f"
       >
         <span

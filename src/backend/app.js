@@ -4,10 +4,12 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
-const { md } = require('./helpers/ejsHelpers');
+const { md } = require('./helpers/ejs-helpers');
 
 var indexRouter = require('./routes/index');
 var projectRouter = require('./routes/project');
+var privateProjectRouter = require('./routes/private-projects');
+var publicProjectRouter = require('./routes/public-projects');
 var contactRouter = require('./routes/contact');
 
 var app = express();
@@ -29,6 +31,8 @@ app.param('lang', function (req, res, next, lang) {
 
 app.use('/:lang?/', indexRouter);
 app.use('/:lang/projet', projectRouter);
+app.use('/:lang/domaine-privee', privateProjectRouter);
+app.use('/:lang/domaine-publique', publicProjectRouter);
 app.use('/:lang/contact', contactRouter);
 
 // catch 404 and forward to error handler

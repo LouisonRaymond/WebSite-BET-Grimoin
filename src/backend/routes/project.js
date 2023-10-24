@@ -1,5 +1,5 @@
 const express = require('express');
-const { getProject } = require('../services/projectService');
+const { getProject } = require('../services/project-service');
 const router = express.Router({mergeParams: true});
 
 /* GET home page. */
