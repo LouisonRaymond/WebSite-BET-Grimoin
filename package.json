@@ -5,6 +5,10 @@
   "scripts": {
     "start": "node ./src/backend/bin/www"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LouisonRaymond/WebSite-BET-Grimoin"
+  },
   "dependencies": {
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
