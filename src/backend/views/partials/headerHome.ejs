@@ -1,0 +1,133 @@
+<!-- Navbar & Hero Start -->
+<header class="header-section-bg">
+    <div class="container-xxl p-0">
+      <!-- Spinner Start -->
+      <div
+        id="spinner"
+        class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center"
+      >
+        <div
+          class="spinner-border text-primary"
+          style="width: 3rem; height: 3rem"
+          role="status"
+        >
+          <span class="sr-only">Loading...</span>
+        </div>
+      </div>
+      <!-- Spinner End -->
+      <div class="container-xxl">
+        <nav
+          class="navbar navbar-expand-lg navbar-light px-4 px-lg-5 py-3 py-lg-0"
+        >
+          <a href="" class="navbar-brand p-0">
+            <h1 class="m-0">
+              <img src="img/logo.png" height="48" width="48" alt="Logo" />
+            </h1>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarCollapse"
+          >
+            <span class="fa fa-bars"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+              <a href="index.html" class="nav-item nav-link active">Accueil</a>
+              <div class="nav-item dropdown">
+                <a
+                  href="#"
+                  class="nav-link dropdown-toggle"
+                  data-bs-toggle="dropdown"
+                  >Nos réalisations</a
+                >
+                <div class="dropdown-menu m-0">
+                  <a href="domainePublique.html" class="dropdown-item"
+                    >Domaine publique</a
+                  >
+                  <a href="domainePrivee.html" class="dropdown-item"
+                    >Domaine privé</a
+                  >
+                </div>
+              </div>
+              <a href="expertises.html" class="nav-item nav-link"
+                >Nos expertises</a
+              >
+
+              <a href="contact.html" class="nav-item nav-link">Contact</a>
+            </div>
+          </div>
+          <% if (model.locale === 'en') { %>
+            <div class="language-switcher py-2 px-4 ms-3 ms-auto py-0">
+              <span class="language-en active">EN</span>
+              <a href="/"><span class="language-fr">FR</span></a>
+            </div>
+            <% } else { %>
+              <div class="language-switcher py-2 px-4 ms-3 ms-auto py-0">
+                <span class="language-fr active">FR</span>
+                <a href="/en"><span class="language-en">EN</span></a>
+              </div>
+          <% } %>
+        </nav>
+      </div>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <!-- Navbar & Hero End -->
+      <!-- Home Start -->
+      <div class="header d-flex justify-content-center">
+        <div class="container">
+          <div class="row h-100 align-items-center">
+            <div class="col-md-7">
+              <div class="header-content">
+                <div class="col-12 text-center text-lg-start">
+                  <h5 class="display-7 text-white animated slideInLeft">
+                    <br />BET GRIMOIN
+                  </h5>
+                  <h2 class="display-5 text-white animated slideInLeft">
+                    L'expertise technique <br />qui résout vos défis<br />
+                    depuis 1994.
+                  </h2>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-5 d-none d-md-block animated slideInRight">
+              <form class="header-form">
+                <div
+                  class="head"
+                  style="
+                    text-align: left;
+                    padding-left: 30px;
+                    padding-top: 30px;
+                  "
+                >
+                  <h3>QUI SOMMES-NOUS ?</h3>
+                </div>
+                <div
+                  style="
+                    text-align: left;
+                    padding-left: 30px;
+                    padding-right: 30px;
+                  "
+                >
+                  <h7
+                    >Avec une équipe d'experts qualifiés et expérimentés, nous
+                    offrons des conseils et des solutions sur mesure dans un
+                    large éventail de domaines techniques. Que ce soit pour des
+                    problèmes de maintenance, des défis de conception ou des
+                    questions de conformité, nous avons les connaissances et
+                    l'expertise nécessaires pour vous guider vers la
+                    réussite.<br /><br
+                  /></h7>
+                </div>
+                <div class="footer">
+                    <a href="contact.html" class="btn btn-primary">Contact Us</a>
+                  </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br />
+    </div>
+  </header>
+  <!-- Home End -->
