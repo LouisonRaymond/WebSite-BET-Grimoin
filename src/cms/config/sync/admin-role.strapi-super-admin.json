@@ -99,8 +99,10 @@
       "subject": "api::translation.translation",
       "properties": {
         "fields": [
+          "fr",
           "key",
-          "content"
+          "page",
+          "en"
         ]
       },
       "conditions": []
@@ -125,8 +127,10 @@
       "subject": "api::translation.translation",
       "properties": {
         "fields": [
+          "fr",
           "key",
-          "content"
+          "page",
+          "en"
         ]
       },
       "conditions": []
@@ -137,8 +141,10 @@
       "subject": "api::translation.translation",
       "properties": {
         "fields": [
+          "fr",
           "key",
-          "content"
+          "page",
+          "en"
         ]
       },
       "conditions": []

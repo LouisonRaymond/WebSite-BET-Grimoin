@@ -8,7 +8,7 @@
       "searchable": true,
       "pageSize": 10,
       "mainField": "key",
-      "defaultSortBy": "key",
+      "defaultSortBy": "id",
       "defaultSortOrder": "ASC"
     },
     "metadatas": {
@@ -16,6 +16,20 @@
         "edit": {},
         "list": {
           "label": "id",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "fr": {
+        "edit": {
+          "label": "fr",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "fr",
           "searchable": true,
           "sortable": true
         }
@@ -34,18 +48,32 @@
           "sortable": true
         }
       },
-      "content": {
+      "page": {
         "edit": {
-          "label": "content",
+          "label": "page",
           "description": "",
           "placeholder": "",
           "visible": true,
           "editable": true
         },
         "list": {
-          "label": "content",
-          "searchable": false,
-          "sortable": false
+          "label": "page",
+          "searchable": true,
+          "sortable": true
+        }
+      },
+      "en": {
+        "edit": {
+          "label": "en",
+          "description": "",
+          "placeholder": "",
+          "visible": true,
+          "editable": true
+        },
+        "list": {
+          "label": "en",
+          "searchable": true,
+          "sortable": true
         }
       },
       "createdAt": {
@@ -108,25 +136,39 @@
       }
     },
     "layouts": {
-      "list": [
-        "id",
-        "key",
-        "createdAt",
-        "updatedAt"
-      ],
       "edit": [
         [
           {
-            "name": "key",
+            "name": "page",
             "size": 6
           }
         ],
         [
           {
-            "name": "content",
+            "name": "key",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "fr",
+            "size": 12
+          }
+        ],
+        [
+          {
+            "name": "en",
             "size": 12
           }
         ]
+      ],
+      "list": [
+        "page",
+        "key",
+        "fr",
+        "en",
+        "updatedAt",
+        "updatedBy"
       ]
     }
   },
