@@ -23,7 +23,10 @@
               </div>
             </div>
             <div class="row g-4">
-              <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
+              <% model.projects.forEach(function(project, index){ %>
+                <%- include('partials/project-bloc', {locale: model.locale, project, delay: model.delays[index]}); %>
+              <% }); %>
+              <!-- <div class="col-md-6 col-lg-4 wow fadeInUp" data-wow-delay="0.3s">
                 <div class="service-item">
                   <div class="overflow-hidden">
                     <img
@@ -173,7 +176,7 @@
                     ></a>
                   </div>
                 </div>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>

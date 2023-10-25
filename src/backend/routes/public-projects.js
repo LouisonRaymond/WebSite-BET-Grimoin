@@ -8,6 +8,7 @@ router.get('/', async function (req, res, next) {
   const projects = await getProjects('public', 1, 6, locale);
 
   const model = {
+    delays: ['0.3s', '0.3s', '0.1s', '0.5s', '0.5s', '0.5s'],
     locale,
     projects
   };
