@@ -33,7 +33,7 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav">
-              <a href="/<%- model.locale %>" class="nav-item nav-link active">Accueil</a>
+              <a href="/<%= model.locale %>" class="nav-item nav-link active">Accueil</a>
               <div class="nav-item dropdown">
                 <a
                   href="#"
@@ -42,20 +42,20 @@
                   >Nos réalisations</a
                 >
                 <div class="dropdown-menu m-0">
-                  <a href="/<%- model.locale %>/domaine-publique" class="dropdown-item"
+                  <a href="/<%= model.locale %>/domaine-publique" class="dropdown-item"
                     >Domaine publique</a
                   >
-                  <a href="/<%- model.locale %>/domaine-privee" class="dropdown-item"
+                  <a href="/<%= model.locale %>/domaine-privee" class="dropdown-item"
                     >Domaine privé</a
                   >
                 </div>
               </div>
               <div class="nav-item dropdown">
-                <a href="/<%- model.locale %>/expertises" class="nav-item nav-link"
+                <a href="/<%= model.locale %>/expertises" class="nav-item nav-link"
                   >Nos expertises</a
                 >
               </div>
-              <a href="/<%- model.locale %>/contact" class="nav-item nav-link">Contact</a>
+              <a href="/<%= model.locale %>/contact" class="nav-item nav-link">Contact</a>
             </div>
             <div class="language-switcher py-2 px-4 ms-3 ms-auto py-0">
               <span class="language-fr active">FR</span

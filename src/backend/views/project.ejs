@@ -16,7 +16,7 @@
           <div class="container feature py-5 px-lg-0">
             <div>
               <h1 class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
-                Projet <%- model.project.title %>
+                Projet <%= model.project.title %>
               </h1>
               <div>
                 <hr class="red_ligne" size="4px" />
@@ -26,9 +26,9 @@
                 <%- md(model.project.description) %>
             </p>
             <br /><br />
-            <img src="<%- model.project.picture %>" /><br /><br />
+            <img src="<%= model.project.picture %>" /><br /><br />
             <p class="fh5co-sub-lead animate-box"></p>
-            <h5><%- model.project.subTitle %></h5>
+            <h5><%= model.project.subTitle %></h5>
             <%- md(model.project.description2) %>
           </div>
         </div>
