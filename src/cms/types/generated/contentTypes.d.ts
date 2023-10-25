@@ -774,13 +774,28 @@ export interface ApiTranslationTranslation extends Schema.CollectionType {
     singularName: 'translation';
     pluralName: 'translations';
     displayName: 'Traductions';
+    description: '';
   };
   options: {
     draftAndPublish: true;
   };
   attributes: {
+    fr: Attribute.Text;
     key: Attribute.String & Attribute.Required & Attribute.Unique;
-    content: Attribute.Blocks;
+    page: Attribute.Enumeration<
+      [
+        'global',
+        'home',
+        'expertises',
+        'private-projects',
+        'public-projects',
+        'project',
+        'contact'
+      ]
+    > &
+      Attribute.Required &
+      Attribute.DefaultTo<'global'>;
+    en: Attribute.Text;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;

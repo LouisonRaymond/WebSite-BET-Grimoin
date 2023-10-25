@@ -4,20 +4,39 @@
   "info": {
     "singularName": "translation",
     "pluralName": "translations",
-    "displayName": "Traductions"
+    "displayName": "Traductions",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
   },
   "pluginOptions": {},
   "attributes": {
+    "fr": {
+      "type": "text",
+      "pluginOptions": {}
+    },
     "key": {
       "type": "string",
-      "required": true,
-      "unique": true
+      "unique": true,
+      "required": true
     },
-    "content": {
-      "type": "blocks"
+    "page": {
+      "type": "enumeration",
+      "enum": [
+        "global",
+        "home",
+        "expertises",
+        "private-projects",
+        "public-projects",
+        "project",
+        "contact"
+      ],
+      "default": "global",
+      "required": true
+    },
+    "en": {
+      "type": "text"
     }
   }
 }

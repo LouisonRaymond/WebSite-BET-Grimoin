@@ -11,7 +11,7 @@
           style="width: 3rem; height: 3rem"
           role="status"
         >
-          <span class="sr-only">Loading...</span>
+          <span class="sr-only"><%= model.translations['header.loading'] %></span>
         </div>
       </div>
       <!-- Spinner End -->
@@ -21,7 +21,7 @@
         >
           <a href="" class="navbar-brand p-0">
             <h1 class="m-0">
-              <img src="img/logo.png" height="48" width="48" alt="Logo" />
+              <img src="/img/logo.png" height="48" width="48" alt="Logo" />
             </h1>
           </a>
           <button
@@ -34,28 +34,28 @@
           </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <div class="navbar-nav">
-              <a href="/<%= model.locale %>" class="nav-item nav-link active">Accueil</a>
+              <a href="/<%= model.locale %>" class="nav-item nav-link active"><%= model.translations['header.navbar.home'] %></a>
               <div class="nav-item dropdown">
                 <a
                   href="#"
                   class="nav-link dropdown-toggle"
                   data-bs-toggle="dropdown"
-                  >Nos réalisations</a
+                  ><%= model.translations['header.navbar.ourProjects'] %></a
                 >
                 <div class="dropdown-menu m-0">
                   <a href="/<%= model.locale %>/domaine-publique" class="dropdown-item"
-                    >Domaine publique</a
+                    ><%= model.translations['header.navbar.ourProjects.publicDomain'] %></a
                   >
                   <a href="/<%= model.locale %>/domaine-privee" class="dropdown-item"
-                    >Domaine privé</a
+                    ><%= model.translations['header.navbar.ourProjects.privateDomain'] %></a
                   >
                 </div>
               </div>
               <a href="/<%= model.locale %>/expertises" class="nav-item nav-link"
-                >Nos expertises</a
+                ><%= model.translations['header.navbar.ourExpertises'] %></a
               >
 
-              <a href="/<%= model.locale %>/contact" class="nav-item nav-link">Contact</a>
+              <a href="/<%= model.locale %>/contact" class="nav-item nav-link"><%= model.translations['header.navbar.contact'] %></a>
             </div>
           </div>
           <% if (model.locale === 'en') { %>

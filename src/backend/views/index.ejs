@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <%- include('partials/head', { model: { locale: model.locale, title: 'BET GRIMOIN - Accueil' } }) %>
-  <%- include('partials/header-home', { model: { locale: model.locale } }) %>
+  <%- include('partials/head', { model: { locale: model.locale, title: model.translations['home.title'] } }) %>
+  <%- include('partials/header-home', { model: { locale: model.locale, translations: model.translations } }) %>
   <body>
     <br /><br />
     <!-- Map Start -->
@@ -45,7 +45,7 @@
             <div class="position-relative h-100">
               <img
                 class="img-fluid w-75 h-auto"
-                src="./img/carte.png"
+                src="/img/carte.png"
                 alt="Carte de l'emplacement des bureaux de l'entreprise"
               />
             </div>
@@ -100,7 +100,7 @@
             <div class="d-flex align-items-end mb-4">
               <img
                 class="img-fluid flex-shrink-0"
-                src="img/Préfecture de la Nièvre.jpg"
+                src="/img/Préfecture de la Nièvre.jpg"
                 style="width: 80px; height: 80px"
               />
               <div class="ms-4">
@@ -113,7 +113,7 @@
             <div class="d-flex align-items-end mb-4">
               <img
                 class="img-fluid flex-shrink-0"
-                src="img/Super U1.jpg"
+                src="/img/Super U1.jpg"
                 style="width: 80px; height: 80px"
               />
               <div class="ms-4">
@@ -126,7 +126,7 @@
             <div class="d-flex align-items-end mb-4">
               <img
                 class="img-fluid flex-shrink-0"
-                src="img/Ministère de l'intérieur.png"
+                src="/img/Ministère de l'intérieur.png"
                 style="width: 80px; height: 80px"
               />
               <div class="ms-4">
@@ -139,7 +139,7 @@
             <div class="d-flex align-items-end mb-4">
               <img
                 class="img-fluid flex-shrink-0"
-                src="img/Ministere de la justice.jpg"
+                src="/img/Ministere de la justice.jpg"
                 style="width: 80px; height: 80px"
               />
               <div class="ms-4">
