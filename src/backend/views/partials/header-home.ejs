@@ -81,11 +81,10 @@
               <div class="header-content">
                 <div class="col-12 text-center text-lg-start">
                   <h5 class="display-7 text-white animated slideInLeft">
-                    <br />BET GRIMOIN
+                    <br /><%- model.translations['header.company'] %>
                   </h5>
                   <h2 class="display-5 text-white animated slideInLeft">
-                    L'expertise technique <br />qui résout vos défis<br />
-                    depuis 1994.
+                    <%- model.translations['header.subTitle'] %>
                   </h2>
                 </div>
               </div>
@@ -100,7 +99,7 @@
                     padding-top: 30px;
                   "
                 >
-                  <h3>QUI SOMMES-NOUS ?</h3>
+                  <h3><%= model.translations['header.who.title'] %></h3>
                 </div>
                 <div
                   style="
@@ -109,18 +108,10 @@
                     padding-right: 30px;
                   "
                 >
-                  <h7
-                    >Avec une équipe d'experts qualifiés et expérimentés, nous
-                    offrons des conseils et des solutions sur mesure dans un
-                    large éventail de domaines techniques. Que ce soit pour des
-                    problèmes de maintenance, des défis de conception ou des
-                    questions de conformité, nous avons les connaissances et
-                    l'expertise nécessaires pour vous guider vers la
-                    réussite.<br /><br
-                  /></h7>
+                  <h7><%- model.translations['header.who.description'] %></h7>
                 </div>
                 <div class="footer">
-                    <a href="/<%= model.locale %>/contact" class="btn btn-primary">Contact Us</a>
+                    <a href="/<%= model.locale %>/contact" class="btn btn-primary"><%- model.translations['header.who.button'] %></a>
                   </div>
               </form>
             </div>

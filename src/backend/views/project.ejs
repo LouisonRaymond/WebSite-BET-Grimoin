@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
   <%- include('partials/head', { model: { locale: model.locale, title: model.project.title } }) %>
-  <%- include('partials/header', { model: { locale: model.locale } }) %>
+  <%- include('partials/header', { model: { locale: model.locale, translations: model.translations } }) %>
   <body>
     <!-- Hero Start -->
     <section id="fh5co-features">
@@ -35,7 +35,7 @@
 
         <div class="container-fluid overflow-hidden py-5 px-lg-0"></div>
         <!-- Article End -->
-        <%- include('partials/footer', { model: { locale: model.locale } }) %>
+        <%- include('partials/footer', { model: { locale: model.locale, translations: model.translations } }) %>
       </div>
     </section>
   </body>

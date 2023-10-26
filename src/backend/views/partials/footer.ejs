@@ -7,37 +7,39 @@
           <div class="logo">
             <img src="/img/logo.png" height="24" width="24" alt="Logo BET GRIMOIN" />
           </div>
-          <p>2023 © BET GRIMOIN<br />Tous droits réservés</p>
+          <%- model.translations['footer.copyright'] %>
         </div>
       </div>
       <div class="col-lg-3 text-start">
         <div class="helpful-links">
           <ul>
-            <a href="/<%= model.locale %>">Accueil</a>
+            <a href="/<%= model.locale %>"><%= model.translations['footer.links.home'] %></a>
             <br />
-            <a href="domainePublique.html">Nos réalisations</a>
+            <a href="/<%= model.locale %>/domaine-publique"><%= model.translations['footer.links.publicDomain'] %></a>
             <br />
-            <a href="/<%= model.locale %>/expertises">Nos expertises</a>
+            <a href="/<%= model.locale %>/domaine-privee"><%= model.translations['footer.links.privateDomain'] %></a>
             <br />
-            <a href="/<%= model.locale %>/contact">Contact</a>
+            <a href="/<%= model.locale %>/expertises"><%= model.translations['footer.links.ourExpertises'] %></a>
+            <br />
+            <a href="/<%= model.locale %>/contact"><%= model.translations['footer.links.contact'] %></a>
           </ul>
         </div>
       </div>
       <div class="col-lg-3 text-start">
         <div class="helpful-links">
           <ul>
-            <a href="https://fr-fr.facebook.com/">Facebook</a>
+            <a href="<%= model.translations['footer.links.facebook.url'] %>"><%= model.translations['footer.links.facebook'] %></a>
             <br />
-            <a href="https://www.linkedin.com/in/jean-raymond-0b8a9458/?originalSubdomain=fr">LinkedIn</a>
+            <a href="<%= model.translations['footer.links.linkedin.url'] %>"><%= model.translations['footer.links.linkedin'] %></a>
           </ul>
         </div>
       </div>
       <div class="col-lg-3 text-start">
         <div class="helpful-links">
           <ul>
-            <a href="index.html">Politique de confidentialité</a>
+            <a href="/<%= model.locale %>"><%= model.translations['footer.links.privacyPolicy'] %>Politique de confidentialité</a>
             <br />
-            <a href="index.html">Conditions d'utilisation</a>
+            <a href="/<%= model.locale %>"><%= model.translations['footer.links.termsOfUse'] %>Conditions d'utilisation</a>
           </ul>
         </div>
       </div>

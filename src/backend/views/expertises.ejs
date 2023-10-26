@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
   <%- include('partials/head', { model: { locale: model.locale, title: 'BET GRIMOIN - Expertises' } }) %>
-  <%- include('partials/header', { model: { locale: model.locale } }) %>
+  <%- include('partials/header', { model: { locale: model.locale, translations: model.translations } }) %>
 
 
   <body>
@@ -17,7 +17,7 @@
         <div class="container feature py-5 px-lg-0">
           <div>
             <h1 class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
-              Nos expertise
+              <%= model.translations['expertises.title'] %>
             </h1>
             <div>
               <hr class="red_ligne" size="4px" />
@@ -254,6 +254,6 @@
     </body>
     <br /><br /><br /><br /><br /><br />
     <!-- Expertise End -->
-    <%- include('partials/footer', { model: { locale: model.locale } }) %>
+    <%- include('partials/footer', { model: { locale: model.locale, translations: model.translations } }) %>
   </body>
 </html>

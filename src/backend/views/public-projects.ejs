@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="FR">
   <%- include('partials/head', { model: { locale: model.locale, title: 'BET GRIMOIN - Domaine Publique' } }) %>
-  <%- include('partials/header', { model: { locale: model.locale } }) %>
+  <%- include('partials/header', { model: { locale: model.locale, translations: model.translations } }) %>
   <body>
     <!-- Hero Start -->
     <section id="fh5co-features">
@@ -16,7 +16,7 @@
         <div class="container-xxl py-5">
           <div class="container">
             <div class="section-title text-center">
-              <h1 class="display-5 mb-5">Nos Réalisations Publique</h1>
+              <h1 class="display-5 mb-5"><%= model.translations['publicProjects.title'] %></h1>
               <div>
                 <hr class="red_ligne" size="4px" />
               </div>
@@ -30,7 +30,7 @@
         </div>
         <!-- Article End -->
         <br /><br /><br /><br />
-        <%- include('partials/footer', { model: { locale: model.locale } }) %>
+        <%- include('partials/footer', { model: { locale: model.locale, translations: model.translations } }) %>
     </section>
   </body>
 </html>
