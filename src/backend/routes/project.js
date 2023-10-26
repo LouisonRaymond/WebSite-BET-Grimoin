@@ -3,7 +3,7 @@ const { getProject } = require('../services/project-service');
 const { getTranslations } = require('../services/translation-service');
 const router = express.Router({mergeParams: true});
 
-/* GET home page. */
+/* GET projects page. */
 router.get('/:id-:title', async function (req, res, next) {
   console.log('id=' + req.params.id);
   const locale = req.lang;
