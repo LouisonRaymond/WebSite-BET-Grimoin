@@ -30,6 +30,8 @@
         "private-projects",
         "public-projects",
         "project",
+        "privacy-policy",
+        "terms-of-use",
         "contact"
       ],
       "default": "global",

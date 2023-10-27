@@ -756,6 +756,53 @@ export interface ApiExpertiseExpertise extends Schema.CollectionType {
   };
 }
 
+export interface ApiPrivacyPolicyPrivacyPolicy extends Schema.SingleType {
+  collectionName: 'privacy_policies';
+  info: {
+    singularName: 'privacy-policy';
+    pluralName: 'privacy-policies';
+    displayName: 'Privacy Policy';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    content: Attribute.RichText &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::privacy-policy.privacy-policy',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::privacy-policy.privacy-policy',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::privacy-policy.privacy-policy',
+      'oneToMany',
+      'api::privacy-policy.privacy-policy'
+    >;
+    locale: Attribute.String;
+  };
+}
+
 export interface ApiProjectProject extends Schema.CollectionType {
   collectionName: 'projects';
   info: {
@@ -847,6 +894,54 @@ export interface ApiProjectProject extends Schema.CollectionType {
   };
 }
 
+export interface ApiTermOfUseTermOfUse extends Schema.SingleType {
+  collectionName: 'term_of_uses';
+  info: {
+    singularName: 'term-of-use';
+    pluralName: 'term-of-uses';
+    displayName: 'Terms of use';
+    description: '';
+  };
+  options: {
+    draftAndPublish: true;
+  };
+  pluginOptions: {
+    i18n: {
+      localized: true;
+    };
+  };
+  attributes: {
+    content: Attribute.RichText &
+      Attribute.Required &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: true;
+        };
+      }>;
+    createdAt: Attribute.DateTime;
+    updatedAt: Attribute.DateTime;
+    publishedAt: Attribute.DateTime;
+    createdBy: Attribute.Relation<
+      'api::term-of-use.term-of-use',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    updatedBy: Attribute.Relation<
+      'api::term-of-use.term-of-use',
+      'oneToOne',
+      'admin::user'
+    > &
+      Attribute.Private;
+    localizations: Attribute.Relation<
+      'api::term-of-use.term-of-use',
+      'oneToMany',
+      'api::term-of-use.term-of-use'
+    >;
+    locale: Attribute.String;
+  };
+}
+
 export interface ApiTranslationTranslation extends Schema.CollectionType {
   collectionName: 'translations';
   info: {
@@ -869,6 +964,8 @@ export interface ApiTranslationTranslation extends Schema.CollectionType {
         'private-projects',
         'public-projects',
         'project',
+        'privacy-policy',
+        'terms-of-use',
         'contact'
       ]
     > &
@@ -910,7 +1007,9 @@ declare module '@strapi/types' {
       'plugin::users-permissions.role': PluginUsersPermissionsRole;
       'plugin::users-permissions.user': PluginUsersPermissionsUser;
       'api::expertise.expertise': ApiExpertiseExpertise;
+      'api::privacy-policy.privacy-policy': ApiPrivacyPolicyPrivacyPolicy;
       'api::project.project': ApiProjectProject;
+      'api::term-of-use.term-of-use': ApiTermOfUseTermOfUse;
       'api::translation.translation': ApiTranslationTranslation;
     }
   }

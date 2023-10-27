@@ -87,6 +87,75 @@
     {
       "action": "plugin::content-manager.explorer.create",
       "actionParameters": {},
+      "subject": "api::privacy-policy.privacy-policy",
+      "properties": {
+        "fields": [
+          "content"
+        ],
+        "locales": [
+          "en",
+          "fr"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::privacy-policy.privacy-policy",
+      "properties": {
+        "locales": [
+          "en",
+          "fr"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "actionParameters": {},
+      "subject": "api::privacy-policy.privacy-policy",
+      "properties": {
+        "locales": [
+          "en",
+          "fr"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::privacy-policy.privacy-policy",
+      "properties": {
+        "fields": [
+          "content"
+        ],
+        "locales": [
+          "en",
+          "fr"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::privacy-policy.privacy-policy",
+      "properties": {
+        "fields": [
+          "content"
+        ],
+        "locales": [
+          "en",
+          "fr"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
       "subject": "api::project.project",
       "properties": {
         "fields": [
@@ -166,6 +235,75 @@
           "description",
           "shortDescription",
           "description2"
+        ],
+        "locales": [
+          "en",
+          "fr"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
+      "subject": "api::term-of-use.term-of-use",
+      "properties": {
+        "fields": [
+          "content"
+        ],
+        "locales": [
+          "en",
+          "fr"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::term-of-use.term-of-use",
+      "properties": {
+        "locales": [
+          "en",
+          "fr"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.publish",
+      "actionParameters": {},
+      "subject": "api::term-of-use.term-of-use",
+      "properties": {
+        "locales": [
+          "en",
+          "fr"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::term-of-use.term-of-use",
+      "properties": {
+        "fields": [
+          "content"
+        ],
+        "locales": [
+          "en",
+          "fr"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::term-of-use.term-of-use",
+      "properties": {
+        "fields": [
+          "content"
         ],
         "locales": [
           "en",
