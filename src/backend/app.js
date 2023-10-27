@@ -11,6 +11,8 @@ var projectRouter = require('./routes/project');
 var privateProjectRouter = require('./routes/private-projects');
 var publicProjectRouter = require('./routes/public-projects');
 var expertisesRouter = require('./routes/expertises');
+var privacyPolicyRouter = require('./routes/privacy-policy');
+var termsOfUseRouter = require('./routes/terms-of-use');
 var contactRouter = require('./routes/contact');
 
 var app = express();
@@ -35,6 +37,8 @@ app.use('/:lang/projet', projectRouter);
 app.use('/:lang/domaine-privee', privateProjectRouter);
 app.use('/:lang/domaine-publique', publicProjectRouter);
 app.use('/:lang/expertises', expertisesRouter);
+app.use('/:lang/politique-de-confidentialite', privacyPolicyRouter);
+app.use('/:lang/conditions-d-utilisation', termsOfUseRouter);
 app.use('/:lang/contact', contactRouter);
 
 // catch 404 and forward to error handler
