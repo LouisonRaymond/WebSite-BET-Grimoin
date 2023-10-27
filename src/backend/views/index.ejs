@@ -9,7 +9,7 @@
       <div class="container feature py-5 px-lg-0">
         <div>
           <h1 class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
-            A propos de nous
+            <%= model.translations['home.aboutUs'] %>
           </h1>
           <div>
             <hr class="red_ligne" size="4px" />
@@ -23,20 +23,18 @@
             >
               <div class="mb-5 wow fadeInUp" data-wow-delay="0.3s">
                 <h3 class="text-center">
-                  <i class="bi-globe2" style="color: #b7143f"></i><br />Des
-                  projets nationaux
+                  <i class="bi-globe2" style="color: #b7143f"></i><br /><%= model.translations['home.aboutUs.title1'] %>
                 </h3>
               </div>
               <div class="mb-5 wow fadeIn" data-wow-delay="0.5s">
                 <h3 class="text-center">
                   <i class="bi-hourglass-top" style="color: #b7143f"></i
-                  ><br />+35 ans d'expériences
+                  ><br /><%= model.translations['home.aboutUs.title2'] %>
                 </h3>
               </div>
               <div class="mb-0 wow fadeInUp" data-wow-delay="0.7s">
                 <h3 class="text-center">
-                  <i class="bi-arrow-up" style="color: #b7143f"></i><br />+300
-                  projets réalisés
+                  <i class="bi-arrow-up" style="color: #b7143f"></i><br /><%= model.translations['home.aboutUs.title3'] %>
                 </h3>
               </div>
             </div>
@@ -58,7 +56,7 @@
     <div class="container-xxl py-5">
       <div class="container">
         <div class="section-title text-center">
-          <h1 class="display-5 mb-5">Nos Réalisations</h1>
+          <h1 class="display-5 mb-5"><%= model.translations['home.projects.title'] %></h1>
         </div>
         <div>
           <hr class="red_ligne" size="4px" />
@@ -79,7 +77,7 @@
         <span
           onmouseover="this.style.color='#769525'"
           onmouseout="this.style.color='#B7143F'"
-          >Plus de Projets <i class="fa fa-arrow-down ms-2"></i
+          ><%= model.translations['home.projects.moreProjects'] %> <i class="fa fa-arrow-down ms-2"></i
         ></span>
       </a>
       <hr class="custom-hr-index" />
@@ -90,7 +88,7 @@
     <div class="container-xxl py-5 wow fadeInUp" data-wow-delay="0.1s">
       <div class="container py-5">
         <div class="text-center">
-          <h4 class="text-secondary text-uppercase">Ils nous font confiance</h4>
+          <h4 class="text-secondary text-uppercase"><%= model.translations['home.trust.title'] %></h4>
         </div>
         <div
           class="owl-carousel testimonial-carousel wow fadeInUp"
