@@ -92,60 +92,10 @@
         </div>
         <div
           class="owl-carousel testimonial-carousel wow fadeInUp"
-          data-wow-delay="0.1s"
-        >
-          <div class="testimonial-item p-4 my-5">
-            <div class="d-flex align-items-end mb-4">
-              <img
-                class="img-fluid flex-shrink-0"
-                src="/img/Préfecture de la Nièvre.jpg"
-                style="width: 80px; height: 80px"
-              />
-              <div class="ms-4">
-                <h5 class="mb-1">Préfécture de la Niévre</h5>
-                <p class="m-0">Institution</p>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-item p-4 my-5">
-            <div class="d-flex align-items-end mb-4">
-              <img
-                class="img-fluid flex-shrink-0"
-                src="/img/Super U1.jpg"
-                style="width: 80px; height: 80px"
-              />
-              <div class="ms-4">
-                <h5 class="mb-1">Super U</h5>
-                <p class="m-0">Supermarché</p>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-item p-4 my-5">
-            <div class="d-flex align-items-end mb-4">
-              <img
-                class="img-fluid flex-shrink-0"
-                src="/img/Ministère de l'intérieur.png"
-                style="width: 80px; height: 80px"
-              />
-              <div class="ms-4">
-                <h5 class="mb-1">Ministère de l'intérieur</h5>
-                <p class="m-0">Gouvernement</p>
-              </div>
-            </div>
-          </div>
-          <div class="testimonial-item p-4 my-5">
-            <div class="d-flex align-items-end mb-4">
-              <img
-                class="img-fluid flex-shrink-0"
-                src="/img/Ministere de la justice.jpg"
-                style="width: 80px; height: 80px"
-              />
-              <div class="ms-4">
-                <h5 class="mb-1">Ministère de la justice</h5>
-                <p class="m-0">Gouvernement</p>
-              </div>
-            </div>
-          </div>
+          data-wow-delay="0.1s">
+          <% (model.testimonials || []).forEach(function(testimonial){ %>
+            <%- include('partials/testimonial-bloc', {model: {locale: model.locale, testimonial}}); %>
+          <% }); %>
         </div>
       </div>
     </div>
