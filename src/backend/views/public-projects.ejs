@@ -23,7 +23,7 @@
             </div>
             <div class="row g-4">
               <% model.projects.forEach(function(project, index){ %>
-                <%- include('partials/project-bloc', {locale: model.locale, project, delay: model.delays[index]}); %>
+                <%- include('partials/project-bloc', {model: {locale: model.locale, translations: model.translations, project, delay: model.delays[index]}}); %>
               <% }); %>
             </div>
           </div>
