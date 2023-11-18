@@ -22,8 +22,8 @@
       },
       "smallTitle": {
         "edit": {
-          "label": "smallTitle",
-          "description": "",
+          "label": "Petit titre",
+          "description": "C'est le premier titre affiché",
           "placeholder": "",
           "visible": true,
           "editable": true
@@ -36,8 +36,8 @@
       },
       "bigTitle": {
         "edit": {
-          "label": "bigTitle",
-          "description": "",
+          "label": "Titre",
+          "description": "Second titre, le plus gros",
           "placeholder": "",
           "visible": true,
           "editable": true
@@ -50,7 +50,7 @@
       },
       "description": {
         "edit": {
-          "label": "description",
+          "label": "Description",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -64,7 +64,7 @@
       },
       "picture": {
         "edit": {
-          "label": "picture",
+          "label": "Image",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -78,7 +78,7 @@
       },
       "position": {
         "edit": {
-          "label": "position",
+          "label": "Position dans la liste",
           "description": "",
           "placeholder": "",
           "visible": true,

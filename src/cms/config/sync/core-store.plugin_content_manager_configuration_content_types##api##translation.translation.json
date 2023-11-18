@@ -22,7 +22,7 @@
       },
       "fr": {
         "edit": {
-          "label": "fr",
+          "label": "Traduction francaise",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -36,7 +36,7 @@
       },
       "key": {
         "edit": {
-          "label": "key",
+          "label": "Clé",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -50,7 +50,7 @@
       },
       "page": {
         "edit": {
-          "label": "page",
+          "label": "Page",
           "description": "",
           "placeholder": "",
           "visible": true,
@@ -64,7 +64,7 @@
       },
       "en": {
         "edit": {
-          "label": "en",
+          "label": "Traduction anglaise",
           "description": "",
           "placeholder": "",
           "visible": true,
