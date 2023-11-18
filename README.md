@@ -19,3 +19,14 @@ yarn strapi import -f export_20231027080456.tar.gz
 
 ```
 Do not forget to change the file name `export_20231027080456.tar.gz` with the one you want to import !
+
+# Deploy
+Run the CMS in production
+```
+pm2 start ecosystem.config.js --only cms --env production
+```
+
+Run the Web Site in production
+```
+pm2 start ecosystem.config.js --only web --env production
+```

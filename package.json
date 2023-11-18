@@ -3,6 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
+    "start:prod": "node ./src/backend/bin/www",
     "start": "node ./src/backend/bin/www"
   },
   "repository": {
