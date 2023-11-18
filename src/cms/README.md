@@ -13,6 +13,13 @@ Import strapi config
 yarn cs import
 ```
 
+### `exportdata`
+Export strapi data [Learn more](https://docs.strapi.io/dev-docs/data-management/export)
+```
+yarn exportdata
+```
+
+
 ### `develop`
 
 Start your Strapi application with autoReload enabled. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-develop)
