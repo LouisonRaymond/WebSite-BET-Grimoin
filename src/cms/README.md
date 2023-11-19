@@ -13,10 +13,10 @@ Import strapi config
 yarn cs import
 ```
 
-### `exportdata`
+### `export:data`
 Export strapi data [Learn more](https://docs.strapi.io/dev-docs/data-management/export)
 ```
-yarn exportdata
+yarn export:data
 ```
 
 
