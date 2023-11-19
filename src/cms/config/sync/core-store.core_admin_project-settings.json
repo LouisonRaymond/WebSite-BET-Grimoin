@@ -1,0 +1,28 @@
+{
+  "key": "core_admin_project-settings",
+  "value": {
+    "menuLogo": {
+      "name": "logoico.png",
+      "hash": "logoico_9944a5f1c1",
+      "url": "/uploads/logoico_9944a5f1c1.png",
+      "width": 200,
+      "height": 200,
+      "ext": ".png",
+      "size": 21.38,
+      "provider": "local"
+    },
+    "authLogo": {
+      "name": "logoico.png",
+      "hash": "logoico_a2e383eb88",
+      "url": "/uploads/logoico_a2e383eb88.png",
+      "width": 200,
+      "height": 200,
+      "ext": ".png",
+      "size": 21.38,
+      "provider": "local"
+    }
+  },
+  "type": "object",
+  "environment": null,
+  "tag": null
+}
