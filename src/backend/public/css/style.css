@@ -279,47 +279,11 @@ h6,
     color: rgba(255, 255, 255, .5);
 }
 
-
-/*** Section Title ***/
-.section-title::before {
-    position: absolute;
-    content: "";
-    width: 60px;
-    height: 11px;
-    bottom: 0;
-    left: 0;
-    border-top: 1px solid #5A5A5A;
-    border-bottom: 1px solid #5A5A5A;
-}
-
-.section-title::after {
-    position: absolute;
-    content: "";
-    width: 90px;
-    height: 1px;
-    bottom: 5px;
-    left: 0;
-    background: var(--primary);
-}
-
-.section-title.text-center::before {
-    left: 50%;
-    margin-left: -30px;
-}
-
-.section-title.text-center::after {
-    width: 120px;
-    left: 50%;
-    margin-left: -60px;
-}
-
-
 /*** Domain Search ***/
 .domain {
     background: url(../img/bg-domain.png) center center no-repeat;
     background-size: contain;
 }
-
 
 /*** Comparison ***/
 @media (min-width: 992px) {
@@ -670,18 +634,21 @@ form#contact button:hover {
 }
 
 
-.expertise-left .small-title, .expertise-right .small-title {
+.expertise-left .small-title,
+.expertise-right .small-title {
     font-size: 12px;
     text-align: left;
     padding-left: 10px;
 }
 
-.expertise-left .big-title, .expertise-right .big-title {
+.expertise-left .big-title,
+.expertise-right .big-title {
     margin-top: 30px;
     text-align: left;
 }
 
-.expertise-left .custom-red-hr, .expertise-right .custom-red-hr {
+.expertise-left .custom-red-hr,
+.expertise-right .custom-red-hr {
     border: none;
     border-top: 2px solid #B7143F;
     width: 200px;
@@ -690,7 +657,8 @@ form#contact button:hover {
     opacity: 100%;
 }
 
-.expertise-left .custom-hr, .expertise-right .custom-hr {
+.expertise-left .custom-hr,
+.expertise-right .custom-hr {
     border: none;
     border-top: 2px solid #CFCFD0;
     margin-left: auto;
@@ -698,50 +666,6 @@ form#contact button:hover {
     margin-top: 15px;
     width: 100%;
     opacity: 80%;
-}
-
-.big-title {
-    margin-left: -25px;
-    margin-top: 30px;
-
-}
-
-.big-title-amo {
-    margin-left: 165px;
-    margin-top: 30px;
-
-}
-
-.big-title-fl {
-    margin-left: -145px;
-    margin-top: 30px;
-
-}
-
-.big-title-elec {
-    margin-left: -120px;
-    margin-top: 30px;
-}
-
-.big-title-mdtcd {
-    margin-left: -340px;
-    margin-top: 30px;
-}
-
-.big-title-stcd {
-    margin-left: -430px;
-    margin-top: 30px;
-
-}
-
-.big-title-ssi {
-    margin-left: -440px;
-    margin-top: 30px;
-}
-
-.big-title-dpe {
-    margin-left: -640px;
-    margin-top: 30px;
 }
 
 .espacement {
@@ -752,180 +676,20 @@ form#contact button:hover {
     margin-top: 60px;
 }
 
-.espacement-autre-elec {
-    margin-top: 40px;
-}
-
-.espacement-autre-fl {
-    margin-top: 45px;
-}
-
-.espacement-autre-amo {
-    margin-top: 90px;
-}
-
-.espacement-autre-mdtcd {
-    margin-top: 40px;
-}
-
-.small-title {
-    margin-left: -35px;
-    font-size: 12px;
-}
-
-.small-title-fl {
-    margin-left: -165px;
-    font-size: 12px;
-}
-
-.small-title-elec {
-    margin-left: -150px;
-    font-size: 12px;
-}
-
-.small-title-amo {
-    margin-left: -190px;
-    font-size: 12px;
-}
-
-.small-title-mdtcd {
-    margin-left: -720px;
-    font-size: 12px;
-
-}
-
-.small-title-stcd {
-    margin-left: -720px;
-    font-size: 12px;
-
-}
-
-.custom-hr {
-    border: none;
-    border-top: 2px solid #CFCFD0;
-    /* Ajustez l'épaisseur et la couleur selon vos préférences */
-    margin-left: auto;
-    /* Alignez la ligne à droite */
-    margin-right: -70px;
-    /* Alignez la ligne à gauche */
-    margin-top: 15px;
-    width: 80%;
-    /* Ajustez la largeur de la ligne */
-    opacity: 80%;
-}
-
-.custom-red-hr {
-    border: none;
-    border-top: 2px solid #B7143F;
-    /* Couleur de la ligne rouge */
-    width: 30%;
-    /* Ajustez la largeur de la ligne */
-    margin-left: 200px;
-    /* Alignez la ligne à droite */
-    margin-right: auto;
-    /* Alignez la ligne à gauche */
-    margin-top: 3px;
-    /* Ajustez la marge supérieure pour l'espacement */
-    opacity: 100%;
-}
-
 .espacement-speciale {
     margin-left: 20px;
     /* Ajustez la valeur selon vos besoins */
 }
 
-
-.custom-red-hr-right {
-    border: none;
-    border-top: 2px solid #B7143F;
-    /* Couleur de la ligne rouge */
-    width: 40%;
-    /* Ajustez la largeur de la ligne */
-    margin-left: -70px;
-    /* Alignez la ligne à droite */
-    margin-right: auto;
-    /* Alignez la ligne à gauche */
-    margin-top: 3px;
-    /* Ajustez la marge supérieure pour l'espacement */
-    opacity: 100%;
-}
-
-.custom-hr-right {
-    border: none;
-    border-top: 2px solid #CFCFD0;
-    /* Ajustez l'épaisseur et la couleur selon vos préférences */
-    margin-left: -70px;
-    /* Alignez la ligne à droite */
-    margin-right: auto;
-    /* Alignez la ligne à gauche */
-    margin-top: 15px;
-    width: 70%;
-    /* Ajustez la largeur de la ligne */
-    opacity: 80%;
-}
-
-
-
-
-
 .custom-link:hover {
     color: #769525;
 }
 
-hr.custom-hr-index {
-    border-color: 2px solid #B7143F;
-    /* Couleur de la ligne */
-    margin: 0 auto;
-    /* Centre la ligne horizontale */
-    padding-top: -20px;
-    /* Padding top négatif de -20px */
-    opacity: 100%;
-    color: #B7143F;
-    width: 20%;
+.project-tile .tile-description {
+    height: 160px;
 }
 
-
-.big-title-EN-thermal {
-    margin-left: -55px;
-    margin-top: 30px;
-}
-
-.small-title-EN-thermal {
-    margin-left: -55px;
-    font-size: 12px;
-}
-
-.big-title-elec-EN {
-    margin-left: -110px;
-    margin-top: 30px;
-}
-
-.big-title-ssi-EN {
-    margin-left: -530px;
-    margin-top: 30px;
-}
-
-.big-title-fl-EN {
-    margin-left: -155px;
-    margin-top: 30px;
-}
-
-.big-title-stcd-EN {
-    margin-left: -455px;
-    margin-top: 30px;
-}
-
-.big-title-amo-EN {
-    margin-left: 67px;
-    margin-top: 30px;
-}
-
-.small-title-amo-EN {
-    margin-left: 30px;
-    font-size: 12px;
-}
-
-.big-title-mdtcd-EN {
-    margin-left: -315px;
-    margin-top: 30px;
+.project-tile .project-tile-image {
+    height: 120px;
+    object-fit: cover;
 }
