@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "translations",
+  "info": {
+    "singularName": "translation",
+    "pluralName": "translations",
+    "displayName": "Traductions",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "fr": {
+      "type": "text",
+      "pluginOptions": {}
+    },
+    "key": {
+      "type": "string",
+      "unique": true,
+      "required": true
+    },
+    "page": {
+      "type": "enumeration",
+      "enum": [
+        "global",
+        "home",
+        "expertises",
+        "private-projects",
+        "public-projects",
+        "project",
+        "privacy-policy",
+        "terms-of-use",
+        "contact"
+      ],
+      "default": "global",
+      "required": true
+    },
+    "en": {
+      "type": "text"
+    }
+  }
+}

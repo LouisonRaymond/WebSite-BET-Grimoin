@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <%- include('partials/head', { model: { locale: model.locale, title: 'BET GRIMOIN - ' + model.translations['privacyPolicy.title'] } }) %>
+  <%- include('partials/header', { model: { locale: model.locale, translations: model.translations } }) %>
+
+
+  <body>
+    <!-- Hero Start -->
+    <section id="fh5co-features">
+      <img
+        src="/img/banner contact good.png"
+        style="width: 100%; margin-top: -13px"
+      />
+      <!-- Hero End -->
+      <div class="container">
+        <br />
+        <div class="container feature py-5 px-lg-0">
+          <div>
+            <h1 class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+              <%= model.translations['privacyPolicy.title'] %>
+            </h1>
+            <div>
+              <hr class="red_ligne" size="4px" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Privacy Policy Start -->
+    <body>
+      <div class="container mt-n5">
+        <%- md(model.privacyPolicy.content) %>
+      </div>
+    </body>
+    <br /><br /><br /><br /><br /><br />
+    <!-- Privacy Policy End -->
+    <%- include('partials/footer', { model: { locale: model.locale, translations: model.translations } }) %>
+  </body>
+</html>

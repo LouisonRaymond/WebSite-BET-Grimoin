@@ -1,0 +1,19 @@
+<div class="row espacement-autre expertise-left">
+    <div class="col-md-6 espacement-autrec">
+        <h6 class="small-title">
+            <%= model.expertise.smallTitle %>
+        </h6>
+        <h4 class="big-title"><strong>
+                <%= model.expertise.bigTitle %>
+            </strong></h4>
+        <hr class="custom-red-hr" />
+        <p class="custom-p">
+            <%- md(model.expertise.description) %>
+        </p>
+        <hr class="custom-hr" />
+    </div>
+    <div class="col-md-6">
+        <img src="<%= model.expertise.pictureUrl %>" style="max-width: 300px; max-height: 300px" alt="<%= model.expertise.pictureAlt %>"
+            class="img-fluid" />
+    </div>
+</div>

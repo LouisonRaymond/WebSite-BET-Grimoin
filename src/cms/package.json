@@ -1,0 +1,38 @@
+{
+  "name": "bet-grimoin-cms",
+  "private": true,
+  "version": "0.1.0",
+  "description": "A Strapi application",
+  "scripts": {
+    "develop": "strapi develop",
+    "start:prod": "strapi start",
+    "start": "strapi start",
+    "build": "strapi build",
+    "strapi": "strapi",
+    "cs": "config-sync",
+    "export:data": "strapi export --no-encrypt"
+  },
+  "devDependencies": {},
+  "dependencies": {
+    "@strapi/plugin-i18n": "4.15.4",
+    "@strapi/plugin-users-permissions": "4.15.4",
+    "@strapi/strapi": "4.15.4",
+    "better-sqlite3": "8.6.0",
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0",
+    "react-router-dom": "^5.2.0",
+    "strapi-plugin-config-sync": "^1.2.3",
+    "styled-components": "^5.2.1"
+  },
+  "author": {
+    "name": "A Strapi developer"
+  },
+  "strapi": {
+    "uuid": "f7c92767-5131-4f74-9a30-1c6e9285d645"
+  },
+  "engines": {
+    "node": ">=16.0.0 <=20.x.x",
+    "npm": ">=6.0.0"
+  },
+  "license": "MIT"
+}

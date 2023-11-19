@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="FR">
+  <%- include('partials/head', { model: { locale: model.locale, title: 'BET GRIMOIN - Domaine Publique' } }) %>
+  <%- include('partials/header', { model: { locale: model.locale, translations: model.translations } }) %>
+  <body>
+    <!-- Hero Start -->
+    <section id="fh5co-features">
+      <img
+        src="/img/banner contact good.png"
+        style="width: 100%; margin-top: -13px"
+      />
+      <!-- Hero End -->
+      <!-- Article Start -->
+      <div class="container">
+        <br /><br /><br /><br /><br /><br />
+        <div class="container-xxl py-5">
+          <div class="container">
+            <div class="section-title text-center">
+              <h1 class="display-5 mb-5"><%= model.translations['publicProjects.title'] %></h1>
+              <div>
+                <hr class="red_ligne" size="4px" />
+              </div>
+            </div>
+            <div class="row g-4">
+              <% model.projects.forEach(function(project, index){ %>
+                <%- include('partials/project-bloc', {model: {locale: model.locale, translations: model.translations, project, delay: model.delays[index]}}); %>
+              <% }); %>
+            </div>
+          </div>
+        </div>
+        <!-- Article End -->
+        <br /><br /><br /><br />
+        <%- include('partials/footer', { model: { locale: model.locale, translations: model.translations } }) %>
+    </section>
+  </body>
+</html>

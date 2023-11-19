@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <%- include('partials/head', { model: { locale: model.locale, title: model.project.title } }) %>
+  <%- include('partials/header', { model: { locale: model.locale, translations: model.translations } }) %>
+  <body>
+    <!-- Hero Start -->
+    <section id="fh5co-features">
+      <img src="/img/banner4.png" style="width: 100%; margin-top: -13px" />
+      <!-- Hero End -->
+      <!-- Article End -->
+      <div class="container">
+        <div class="row text-center row-bottom-padded-md">
+          <br />
+          <br /><br />
+          <br />
+          <div class="container feature py-5 px-lg-0">
+            <div>
+              <h1 class="text-center mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                Projet <%= model.project.title %>
+              </h1>
+              <div>
+                <hr class="red_ligne" size="4px" />
+              </div>
+            </div>
+            <div class="fh5co-sub-lead animate-box text-start">
+                <%- md(model.project.description) %>
+            </div>
+            <br /><br />
+            <img src="<%= model.project.picture %>" /><br /><br />
+            <p class="fh5co-sub-lead animate-box"></p>
+            <h5><%= model.project.subTitle %></h5>
+            <div class="text-start">
+              <%- md(model.project.description2) %>
+            </div>
+          </div>
+        </div>
+
+        <div class="container-fluid overflow-hidden py-5 px-lg-0"></div>
+        <!-- Article End -->
+        <%- include('partials/footer', { model: { locale: model.locale, translations: model.translations } }) %>
+      </div>
+    </section>
+  </body>
+</html>

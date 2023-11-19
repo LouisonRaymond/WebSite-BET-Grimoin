@@ -1,0 +1,29 @@
+{
+  "kind": "singleType",
+  "collectionName": "term_of_uses",
+  "info": {
+    "singularName": "term-of-use",
+    "pluralName": "term-of-uses",
+    "displayName": "Terms of use",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "content": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "richtext",
+      "required": true
+    }
+  }
+}
