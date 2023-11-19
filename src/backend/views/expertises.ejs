@@ -28,7 +28,7 @@
     </section>
     <!-- Expertise Start -->
     <body>
-      <div class="container text-center mt-n5">
+      <div class="container mt-n5">
         <% model.expertises.forEach((expertise, index) => { %>
           <% if (index % 2 === 0) { %>
             <%- include('partials/expertise-bloc-left', { model: { expertise, locale: model.locale, translations: model.translations } }) %>

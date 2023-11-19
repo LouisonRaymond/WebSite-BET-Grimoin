@@ -9,6 +9,7 @@
 .realisations {
     background-color: white;
 }
+
 .red_ligne {
     color: #B7143F;
     align-items: center;
@@ -42,18 +43,17 @@
 
 }
 
-.div-transparent:before
-{
-	content: "";
-	position: absolute;
+.div-transparent:before {
+    content: "";
+    position: absolute;
     margin-left: auto;
     margin-right: auto;
-	top: 0;
-	left: 5%;
-	right: 5%;
-	width: 50%;
-	height: 2px;
-	background-image: linear-gradient(to right, transparent, #B7143F, transparent);
+    top: 0;
+    left: 5%;
+    right: 5%;
+    width: 50%;
+    height: 2px;
+    background-image: linear-gradient(to right, transparent, #B7143F, transparent);
 }
 
 body {
@@ -62,18 +62,23 @@ body {
 
 
 body::-webkit-scrollbar {
-    width: 12px; /* width of the entire scrollbar */
-  }
-  
-  body::-webkit-scrollbar-track {
-    background: white; /* color of the tracking area */
-  }
-  
-  body::-webkit-scrollbar-thumb {
-    background-color: #484848; /* color of the scroll thumb */
-    border-radius: 20px; /* roundness of the scroll thumb */
-    border: 3px solid white; /* creates padding around scroll thumb */
-  }
+    width: 12px;
+    /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+    background: white;
+    /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #484848;
+    /* color of the scroll thumb */
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid white;
+    /* creates padding around scroll thumb */
+}
 
 /*** Spinner ***/
 #spinner {
@@ -235,12 +240,12 @@ h6,
     .navbar-light {
         position: absolute;
         width: 100%;
-        height:80px;
+        height: 80px;
         top: 0;
         left: 0;
         z-index: 999;
     }
-    
+
     .sticky-top.navbar-light {
         position: fixed;
         background: #FFFFFF;
@@ -270,7 +275,7 @@ h6,
     background-repeat: no-repeat;
 }
 
-.breadcrumb-item + .breadcrumb-item::before {
+.breadcrumb-item+.breadcrumb-item::before {
     color: rgba(255, 255, 255, .5);
 }
 
@@ -398,9 +403,9 @@ h6,
 
 /*** Footer ***/
 .footer {
-    background-color:white;
-    text-align:center;
-    padding-top:40px;
+    background-color: white;
+    text-align: center;
+    padding-top: 40px;
 }
 
 
@@ -408,7 +413,7 @@ h6,
 
     display: inline-block;
     font-weight: bold;
-    
+
 }
 
 .language-switcher span {
@@ -437,52 +442,58 @@ h6,
     display: block;
     background-color: #f8f9fa;
     overflow: hidden;
-  }
-  
-  .header .header-form .head {
+}
+
+.header .header-form .head {
     text-align: center;
     color: #444;
     font-size: 20px;
     font-weight: 400;
     padding: 15px 0;
-  }
-  
-  .header .header-form .body {
+}
+
+.header .header-form .body {
     padding: 25px 20px;
-  }
-  
-  .header .header-form .footer .btn {
+}
+
+.header-home .header-form div.footer {
+    padding: 10px 0;
+    background: none;
+}
+
+.header .header-form .footer .btn {
     padding: 15px 0;
     border-radius: 0;
-  }
-  
-  .header .header-form .footer .btn:focus, .header .header-form .footer .btn:active {
-    box-shadow: none;
-  }
+}
 
-  .contact-page {
+.header .header-form .footer .btn:focus,
+.header .header-form .footer .btn:active {
+    box-shadow: none;
+}
+
+.contact-page {
     margin: 120px 0px;
-  }
-  
-  .contact-page .inner-content {
+}
+
+.contact-page .inner-content {
     background-color: #f7f7f7;
     border-radius: 7px;
     overflow: hidden;
-  }
-  
-  .contact-page .inner-content #map {
+}
+
+.contact-page .inner-content #map {
     margin-bottom: -8px;
     overflow: hidden;
     border-top-left-radius: 7px;
     border-bottom-left-radius: 7px;
-  }
-  
-  form#contact {
+}
+
+form#contact {
     position: relative;
     margin: 0px 60px 0px 45px;
-  }
-  
-  form#contact input {
+}
+
+form#contact input {
     width: 100%;
     height: 46px;
     border-radius: 7px;
@@ -494,18 +505,18 @@ h6,
     color: #8d99af;
     padding: 0px 15px;
     margin-bottom: 30px;
-  }
-  
-  form#contact ul li {
+}
+
+form#contact ul li {
     display: inline-block;
     margin-right: 30px;
-  }
-  
-  form#contact ul li:last-child {
+}
+
+form#contact ul li:last-child {
     margin-right: 0px;
-  }
-  
-  form#contact input[type=checkbox] {
+}
+
+form#contact input[type=checkbox] {
     display: inline-block;
     width: 15px;
     min-width: 15px;
@@ -514,21 +525,21 @@ h6,
     border: 1px solid #8d99af;
     outline: none;
     cursor: pointer;
-  }
-  
-  form#contact span {
+}
+
+form#contact span {
     color: #8d99af;
     font-size: 14px;
     font-weight: 500;
     margin-left: 8px;
-  }
-  
-  form#contact input::placeholder {
+}
+
+form#contact input::placeholder {
     color: #8d99af;
     font-weight: 500;
-  }
-  
-  form#contact textarea {
+}
+
+form#contact textarea {
     margin-top: 10px;
     width: 100%;
     min-width: 100%;
@@ -545,14 +556,14 @@ h6,
     color: #8d99af;
     padding: 15px;
     margin-bottom: 30px;
-  }
-  
-  form#contact textarea::placeholder {
+}
+
+form#contact textarea::placeholder {
     color: #8d99af;
     font-weight: 500;
-  }
-  
-  form#contact button {
+}
+
+form#contact button {
     margin-bottom: -15px;
     display: inline-block;
     background-color: #8d99af;
@@ -566,9 +577,9 @@ h6,
     border: none;
     outline: none;
     transition: all .3s;
-  }
-  
-  form#contact button i {
+}
+
+form#contact button i {
     margin-right: 10px;
     width: 24px;
     height: 24px;
@@ -579,12 +590,12 @@ h6,
     text-align: center;
     font-size: 12px;
     line-height: 24px;
-  }
-  
-  form#contact button:hover {
+}
+
+form#contact button:hover {
     background-color: #2b2d42;
     color: #fff;
-  }
+}
 
 .red_ligne {
     color: #B7143F;
@@ -649,29 +660,44 @@ h6,
 }
 
 .custom-p {
-     /* Réduit l'espacement entre les paragraphes */
-    text-align: left; /* Aligner le texte à droite */
-    margin-left: 200px; /* Décaler le texte vers la droite */
+    /* Réduit l'espacement entre les paragraphes */
+    text-align: left;
+    /* Aligner le texte à droite */
+    margin-left: 200px;
+    /* Décaler le texte vers la droite */
     font-size: 15px;
-    
+
 }
 
-.custom-p-right {
-    /* Réduit l'espacement entre les paragraphes */
-   text-align: left; /* Aligner le texte à droite */
-   margin-left: -70px; /* Décaler le texte vers la droite */
-   margin-top: -20px;
-   font-size: 15px;
-   
+
+.expertise-left .small-title, .expertise-right .small-title {
+    font-size: 12px;
+    text-align: left;
+    padding-left: 10px;
 }
 
-.custom-p-right-stcd {
-    /* Réduit l'espacement entre les paragraphes */
-   text-align: left; /* Aligner le texte à droite */
-   margin-left: -70px; /* Décaler le texte vers la droite */
-   margin-top: 0px;
-   font-size: 15px;
-   
+.expertise-left .big-title, .expertise-right .big-title {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.expertise-left .custom-red-hr, .expertise-right .custom-red-hr {
+    border: none;
+    border-top: 2px solid #B7143F;
+    width: 200px;
+    margin-right: auto;
+    margin-top: 3px;
+    opacity: 100%;
+}
+
+.expertise-left .custom-hr, .expertise-right .custom-hr {
+    border: none;
+    border-top: 2px solid #CFCFD0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    width: 100%;
+    opacity: 80%;
 }
 
 .big-title {
@@ -725,6 +751,7 @@ h6,
 .espacement-autre {
     margin-top: 60px;
 }
+
 .espacement-autre-elec {
     margin-top: 40px;
 }
@@ -764,57 +791,76 @@ h6,
 .small-title-mdtcd {
     margin-left: -720px;
     font-size: 12px;
-    
+
 }
 
 .small-title-stcd {
     margin-left: -720px;
     font-size: 12px;
-    
+
 }
 
 .custom-hr {
     border: none;
-    border-top: 2px solid #CFCFD0; /* Ajustez l'épaisseur et la couleur selon vos préférences */
-    margin-left: auto; /* Alignez la ligne à droite */
-    margin-right: -70px; /* Alignez la ligne à gauche */
+    border-top: 2px solid #CFCFD0;
+    /* Ajustez l'épaisseur et la couleur selon vos préférences */
+    margin-left: auto;
+    /* Alignez la ligne à droite */
+    margin-right: -70px;
+    /* Alignez la ligne à gauche */
     margin-top: 15px;
-    width: 80%; /* Ajustez la largeur de la ligne */
+    width: 80%;
+    /* Ajustez la largeur de la ligne */
     opacity: 80%;
 }
 
 .custom-red-hr {
     border: none;
-    border-top: 2px solid #B7143F; /* Couleur de la ligne rouge */
-    width: 30%; /* Ajustez la largeur de la ligne */
-    margin-left: 200px; /* Alignez la ligne à droite */
-    margin-right: auto; /* Alignez la ligne à gauche */
-    margin-top: 3px; /* Ajustez la marge supérieure pour l'espacement */
+    border-top: 2px solid #B7143F;
+    /* Couleur de la ligne rouge */
+    width: 30%;
+    /* Ajustez la largeur de la ligne */
+    margin-left: 200px;
+    /* Alignez la ligne à droite */
+    margin-right: auto;
+    /* Alignez la ligne à gauche */
+    margin-top: 3px;
+    /* Ajustez la marge supérieure pour l'espacement */
     opacity: 100%;
 }
 
 .espacement-speciale {
-    margin-left: 20px; /* Ajustez la valeur selon vos besoins */
+    margin-left: 20px;
+    /* Ajustez la valeur selon vos besoins */
 }
 
 
 .custom-red-hr-right {
     border: none;
-    border-top: 2px solid #B7143F; /* Couleur de la ligne rouge */
-    width: 40%; /* Ajustez la largeur de la ligne */
-    margin-left: -70px; /* Alignez la ligne à droite */
-    margin-right: auto; /* Alignez la ligne à gauche */
-    margin-top: 3px; /* Ajustez la marge supérieure pour l'espacement */
+    border-top: 2px solid #B7143F;
+    /* Couleur de la ligne rouge */
+    width: 40%;
+    /* Ajustez la largeur de la ligne */
+    margin-left: -70px;
+    /* Alignez la ligne à droite */
+    margin-right: auto;
+    /* Alignez la ligne à gauche */
+    margin-top: 3px;
+    /* Ajustez la marge supérieure pour l'espacement */
     opacity: 100%;
 }
 
 .custom-hr-right {
     border: none;
-    border-top: 2px solid #CFCFD0; /* Ajustez l'épaisseur et la couleur selon vos préférences */
-    margin-left: -70px; /* Alignez la ligne à droite */
-    margin-right: auto; /* Alignez la ligne à gauche */
+    border-top: 2px solid #CFCFD0;
+    /* Ajustez l'épaisseur et la couleur selon vos préférences */
+    margin-left: -70px;
+    /* Alignez la ligne à droite */
+    margin-right: auto;
+    /* Alignez la ligne à gauche */
     margin-top: 15px;
-    width: 70%; /* Ajustez la largeur de la ligne */
+    width: 70%;
+    /* Ajustez la largeur de la ligne */
     opacity: 80%;
 }
 
@@ -827,9 +873,12 @@ h6,
 }
 
 hr.custom-hr-index {
-    border-color: 2px solid #B7143F; /* Couleur de la ligne */
-    margin: 0 auto; /* Centre la ligne horizontale */
-    padding-top: -20px; /* Padding top négatif de -20px */
+    border-color: 2px solid #B7143F;
+    /* Couleur de la ligne */
+    margin: 0 auto;
+    /* Centre la ligne horizontale */
+    padding-top: -20px;
+    /* Padding top négatif de -20px */
     opacity: 100%;
     color: #B7143F;
     width: 20%;
@@ -879,13 +928,4 @@ hr.custom-hr-index {
 .big-title-mdtcd-EN {
     margin-left: -315px;
     margin-top: 30px;
-}
-
-.custom-p-right-mdtcd-EN {
-    /* Réduit l'espacement entre les paragraphes */
-   text-align: left; /* Aligner le texte à droite */
-   margin-left: -70px; /* Décaler le texte vers la droite */
-   margin-top: 0px;
-   font-size: 15px;
-   
 }
