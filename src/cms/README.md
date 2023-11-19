@@ -40,6 +40,8 @@ npm run start
 yarn start
 ```
 
+Then open your browser at [http://localhost:1337/admin](http://localhost:1337/admin)
+
 ### `build`
 
 Build your admin panel. [Learn more](https://docs.strapi.io/dev-docs/cli#strapi-build)

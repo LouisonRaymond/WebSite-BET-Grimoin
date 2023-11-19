@@ -9,3 +9,5 @@ Start the website
 ```shell
 yarn start
 ```
+
+Then open your browser at [http://localhost:3000](http://localhost:3000)
