@@ -10,7 +10,7 @@
 
 ## Export data from strapi
 ```
-yarn exportdata
+yarn export:data
 
 ```
 ## Import data from strapi
