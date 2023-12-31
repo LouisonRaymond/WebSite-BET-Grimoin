@@ -1,0 +1,44 @@
+name: deploy-website
+run-name: ${{ github.actor }} is learning GitHub Actions
+on:
+  push:
+    tags:
+      - v*.**
+      - '!v*.**-rc**'
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Configure SSH
+        run: |
+          mkdir -p ~/.ssh/
+          echo "$SSH_KEY" > ~/.ssh/production.key
+          chmod 600 ~/.ssh/production.key
+          cat >>~/.ssh/config <<END
+          Host production
+            HostName $SSH_HOST
+            User $SSH_USER
+            IdentityFile ~/.ssh/production.key
+            StrictHostKeyChecking no
+          END
+        env:
+          SSH_USER: ${{ secrets.PRODUCTION_SSH_USER }}
+          SSH_KEY: ${{ secrets.PRODUCTION_SSH_KEY }}
+          SSH_HOST: ${{ secrets.PRODUCTION_SSH_HOST }}
+      - name: Checking out Tag ${{ github.ref_name }}
+        run: |
+          cd ~/app/WebSite-BET-Grimoin
+          git reset --hard HEAD
+          git checkout ${{ github.ref_name }}
+      - name: Install website dependencies
+        run: |
+          yarn install
+          cd src/cms
+          yarn install
+      - name: Build the strapi
+        run: yarn build
+      - name: Start the server
+        if: ${{ always() }}
+        run: |
+          ssh production 'pm2 restart --update-env cms'
+          ssh production 'pm2 restart --update-env site'
