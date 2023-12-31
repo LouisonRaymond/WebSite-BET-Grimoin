@@ -1,10 +1,10 @@
 module.exports = {
   apps: [{
     name: "cms",
-    script: 'yarn',
-    args: 'start:prod',
-    cwd: 'src/cms/',
-    interpreter: '/bin/bash',
+    script: "yarn",
+    args: "start:prod",
+    cwd: "~app/WebSite-BET-Grimoin/src/cms/",
+    interpreter: "/bin/bash",
     env: {
       NODE_ENV: "development",
     },
@@ -13,10 +13,11 @@ module.exports = {
     }
   },
   {
-    name: "web",
-    script: 'yarn',
-    args: 'start:prod',
-    interpreter: '/bin/bash',
+    name: "site",
+    script: "yarn",
+    args: "start:prod",
+    cwd: "~app/WebSite-BET-Grimoin/",
+    interpreter: "/bin/bash",
     env: {
       NODE_ENV: "development",
     },
