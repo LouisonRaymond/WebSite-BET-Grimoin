@@ -1,22 +1,24 @@
 require('dotenv').config();
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
-const { md } = require('./helpers/ejs-helpers');
+const createError = require('http-errors');
+const express = require('express');
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const logger = require('morgan');
+const ejs = require('ejs');
+const { md, get } = require('./helpers/ejs-helpers');
 
-var indexRouter = require('./routes/index');
-var projectRouter = require('./routes/project');
-var privateProjectRouter = require('./routes/private-projects');
-var publicProjectRouter = require('./routes/public-projects');
-var expertisesRouter = require('./routes/expertises');
-var privacyPolicyRouter = require('./routes/privacy-policy');
-var termsOfUseRouter = require('./routes/terms-of-use');
-var contactRouter = require('./routes/contact');
+const indexRouter = require('./routes/index');
+const projectRouter = require('./routes/project');
+const privateProjectRouter = require('./routes/private-projects');
+const publicProjectRouter = require('./routes/public-projects');
+const expertisesRouter = require('./routes/expertises');
+const privacyPolicyRouter = require('./routes/privacy-policy');
+const termsOfUseRouter = require('./routes/terms-of-use');
+const contactRouter = require('./routes/contact');
 
-var app = express();
+const app = express();
 app.locals.md = md;
+app.locals.get = get;
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');

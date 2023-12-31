@@ -1,4 +1,4 @@
-const fetch = require('node-fetch');
+const nodemailer = require('nodemailer');
 const smtpHost = process.env.SMTP_HOST;
 const smtpPort = process.env.SMTP_PORT;
 const smtpUser = process.env.SMTP_USER;

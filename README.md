@@ -10,6 +10,7 @@
 
 ## Export data from strapi
 ```
+cd src/cms
 yarn export:data
 
 ```

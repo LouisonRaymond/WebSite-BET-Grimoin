@@ -1,7 +1,9 @@
-var express = require('express');
+const express = require('express');
 const { getTranslations } = require('../services/translation-service');
 const { sendMail } = require('../services/mail-service');
-var router = express.Router({ mergeParams: true });
+const { createContactMessage } = require('../services/contact-service');
+const router = express.Router({ mergeParams: true });
+const sendEmail = process.env.SEND_EMAIL === 'true';
 
 /* GET contact : send a message to the contact email. */
 router.get('/', async function (req, res, next) {
@@ -9,8 +11,9 @@ router.get('/', async function (req, res, next) {
   const translations = await getTranslations(['global', 'contact'], locale);
 
   const model = {
-    locale
-    , translations
+    locale,
+    translations,
+    contactMessage: {}
   };
   res.render('contact', { model });
 });
@@ -18,16 +21,28 @@ router.get('/', async function (req, res, next) {
 /* POST contact : send a message to the contact email. */
 router.post('/', async function (req, res, next) {
   console.log('contact form data :', req.body);
+  const locale = req.lang;
   let successMessage = '';
   let errorMessage = '';
-  const locale = req.lang;
-  const from = req.body.email;
-  const subject = `Nouveau message du formulaire de contact (${req.body.lastname} ${req.body.firstname} <${req.body.email}>)`;
-  const textMessage = `Nom: ${req.body.lastname}\nPrenom: ${req.body.firstname}\nEmail: ${req.body.email}\nSociété: ${req.body.company}\nMessage:\n${req.body.message}`;
   const translations = await getTranslations(['global', 'contact'], locale);
 
   try {
-    await sendMail({ subject, textMessage, from });
+    const contactMessage = {
+      lastname: req.body.lastname,
+      firstname: req.body.firstname,
+      email: req.body.email,
+      company: req.body.company,
+      message: req.body.message,
+    };
+    await createContactMessage(contactMessage);
+
+    if (sendEmail) {
+      const from = req.body.email;
+      const subject = `Nouveau message du formulaire de contact (${req.body.lastname} ${req.body.firstname} <${req.body.email}>)`;
+      const textMessage = `Nom: ${req.body.lastname}\nPrenom: ${req.body.firstname}\nEmail: ${req.body.email}\nSociété: ${req.body.company}\nMessage:\n${req.body.message}`;
+      await sendMail({ subject, textMessage, from });
+    }
+
     successMessage = translations['contact.successMessage'];
   } catch (error) {
     console.error(error);
@@ -38,7 +53,8 @@ router.post('/', async function (req, res, next) {
     locale,
     translations,
     successMessage,
-    errorMessage
+    errorMessage,
+    contactMessage: !!errorMessage ? req.body : {},
   };
   res.render('contact', { model });
 });
