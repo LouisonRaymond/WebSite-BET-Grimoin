@@ -6,6 +6,58 @@
     {
       "action": "plugin::content-manager.explorer.create",
       "actionParameters": {},
+      "subject": "api::contact-message.contact-message",
+      "properties": {
+        "fields": [
+          "lastname",
+          "firstname",
+          "email",
+          "company",
+          "message"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.delete",
+      "actionParameters": {},
+      "subject": "api::contact-message.contact-message",
+      "properties": {},
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.read",
+      "actionParameters": {},
+      "subject": "api::contact-message.contact-message",
+      "properties": {
+        "fields": [
+          "lastname",
+          "firstname",
+          "email",
+          "company",
+          "message"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.update",
+      "actionParameters": {},
+      "subject": "api::contact-message.contact-message",
+      "properties": {
+        "fields": [
+          "lastname",
+          "firstname",
+          "email",
+          "company",
+          "message"
+        ]
+      },
+      "conditions": []
+    },
+    {
+      "action": "plugin::content-manager.explorer.create",
+      "actionParameters": {},
       "subject": "api::expertise.expertise",
       "properties": {
         "fields": [

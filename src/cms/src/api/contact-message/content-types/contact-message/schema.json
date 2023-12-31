@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "contact_messages",
+  "info": {
+    "singularName": "contact-message",
+    "pluralName": "contact-messages",
+    "displayName": "Contact message",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "lastname": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "firstname": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "email": {
+      "type": "email",
+      "maxLength": 320
+    },
+    "company": {
+      "type": "string",
+      "maxLength": 200
+    },
+    "message": {
+      "type": "text",
+      "maxLength": 2000
+    }
+  }
+}
